@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HelpSceneController">
+   <children>
+      <ImageView fitHeight="705.0" fitWidth="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/CommonBG.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="649.0" mnemonicParsing="false" onAction="#toPlayMenuScene" prefHeight="37.0" prefWidth="65.0" text="Back">
+         <font>
+            <Font name="GalacticaGrid" size="16.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="125.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Math Ship Tutorial" textAlignment="CENTER">
+         <font>
+            <Font name="GalacticaGrid" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="82.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hit Enemy ships to solve inequality. if you go above the inequality, you will lose a life. lose 3 lives and GAME OVER. Survive for as long as you can! " textAlignment="CENTER" wrappingWidth="344.81986415161964">
+         <font>
+            <Font name="GalacticaGrid" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="spacebarButton" layoutX="201.0" layoutY="472.0" mnemonicParsing="false" text="SpaceBar">
+         <font>
+            <Font name="GalacticaGrid" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="leftArrowButton" layoutX="82.0" layoutY="244.0" mnemonicParsing="false" text="←" />
+      <Button fx:id="rightArrowButton" layoutX="381.0" layoutY="243.0" mnemonicParsing="false" text="→" />
+      <ImageView fx:id="spaceShip1" fitHeight="85.0" fitWidth="82.0" layoutX="209.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/RedFlyShip.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="82.0" layoutX="213.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/RedFlyShip.png" />
+         </image>
+      </ImageView>
+      <TextFlow layoutX="116.0" layoutY="115.0" prefHeight="65.0" prefWidth="270.0" textAlignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Use the " textAlignment="CENTER" wrappingWidth="340.90838623046875">
+               <font>
+                  <Font name="GalacticaGrid" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Left">
+               <font>
+                  <Font name="GalacticaGrid" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text=" And">
+               <font>
+                  <Font name="GalacticaGrid" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text=" RIght">
+               <font>
+                  <Font name="GalacticaGrid" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text=" arrows keys to move the ship left and right.">
+               <font>
+                  <Font name="GalacticaGrid" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="64.0" layoutY="352.0" prefHeight="111.0" prefWidth="381.0" textAlignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Use the " wrappingWidth="94.24492645263672">
+               <font>
+                  <Font name="GalacticaGrid" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="space bar ">
+               <font>
+                  <Font name="GalacticaGrid" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="to shoot at enemy ships!">
+               <font>
+                  <Font name="GalacticaGrid" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+   </children>
+</AnchorPane>
